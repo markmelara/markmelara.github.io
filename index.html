@@ -1,306 +1,598 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mark Melara | Writer / Creative</title>
-    <meta name="description" content="Mark Melara is a WGA writer and creative working across film, television, gaming, and branded content.">
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            background: #f7f5f0;
-            color: #171717;
-            line-height: 1.5;
-        }
+  <title>Mark Melara — Writer / Creative</title>
+  <meta name="description" content="Mark Melara is a writer and creative producer working across television, gaming, and branded entertainment.">
 
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 28px 5vw;
-            border-bottom: 1px solid #d8d5ce;
-        }
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-        .logo {
-            font-size: 20px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
+    html {
+      scroll-behavior: smooth;
+    }
 
-        nav a {
-            color: #171717;
-            text-decoration: none;
-            margin-left: 28px;
-            font-size: 14px;
-        }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: #111;
+      background: #f7f6f2;
+      line-height: 1.4;
+    }
 
-        nav a:hover {
-            opacity: 0.6;
-        }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-        .hero {
-            min-height: 75vh;
-            display: flex;
-            align-items: center;
-            padding: 8vw 5vw;
-        }
+    /* HEADER */
 
-        .hero-inner {
-            max-width: 950px;
-        }
+    header {
+      width: 100%;
+      padding: 28px 5vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #d8d6d0;
+    }
 
-        .eyebrow {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            margin-bottom: 25px;
-            color: #666;
-        }
+    .name {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+    }
 
-        h1 {
-            font-size: clamp(60px, 10vw, 140px);
-            line-height: 0.9;
-            letter-spacing: -7px;
-            max-width: 1000px;
-            margin-bottom: 40px;
-        }
+    nav {
+      display: flex;
+      gap: 28px;
+      font-size: 13px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
 
-        .intro {
-            font-size: clamp(20px, 2.5vw, 30px);
-            line-height: 1.25;
-            max-width: 750px;
-        }
+    nav a:hover {
+      opacity: 0.5;
+    }
 
-        .section {
-            padding: 100px 5vw;
-            border-top: 1px solid #d8d5ce;
-        }
+    /* HERO */
 
-        .section-label {
-            font-size: 13px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: #666;
-            margin-bottom: 40px;
-        }
+    .hero {
+      min-height: 78vh;
+      padding: 9vw 5vw 7vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      border-bottom: 1px solid #d8d6d0;
+    }
 
-        .work-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-        }
+    .hero h1 {
+      font-size: clamp(70px, 13vw, 190px);
+      line-height: 0.82;
+      letter-spacing: -0.075em;
+      font-weight: 800;
+      max-width: 1200px;
+    }
 
-        .work-item {
-            min-height: 280px;
-            padding: 35px;
-            background: #e8e4dc;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            text-decoration: none;
-            color: #171717;
-        }
+    .hero-copy {
+      margin-top: 45px;
+      max-width: 650px;
+      font-size: clamp(20px, 2.2vw, 30px);
+      line-height: 1.15;
+      letter-spacing: -0.025em;
+    }
 
-        .work-item:hover {
-            background: #ddd9d0;
-        }
+    /* SELECTED WORK */
 
-        .work-type {
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: #666;
-            margin-bottom: 10px;
-        }
+    .section {
+      padding: 100px 5vw;
+    }
 
-        .work-title {
-            font-size: 30px;
-            font-weight: 600;
-            letter-spacing: -1px;
-        }
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 55px;
+      border-bottom: 1px solid #111;
+      padding-bottom: 15px;
+    }
 
-        .about {
-            max-width: 800px;
-            font-size: 25px;
-            line-height: 1.35;
-        }
+    .section-title {
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
 
-        .services {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 1px;
-            background: #d8d5ce;
-            border: 1px solid #d8d5ce;
-        }
+    .section-number {
+      font-size: 13px;
+      color: #666;
+    }
 
-        .service {
-            background: #f7f5f0;
-            padding: 35px;
-        }
+    .work-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 70px 30px;
+    }
 
-        .service h3 {
-            font-size: 22px;
-            margin-bottom: 12px;
-        }
+    .project {
+      display: block;
+    }
 
-        .service p {
-            color: #555;
-        }
+    .project-image {
+      aspect-ratio: 16 / 10;
+      background: #deddd8;
+      overflow: hidden;
+      margin-bottom: 20px;
+      position: relative;
+    }
 
-        footer {
-            padding: 50px 5vw;
-            border-top: 1px solid #d8d5ce;
-            display: flex;
-            justify-content: space-between;
-            font-size: 14px;
-        }
+    .project-image::after {
+      content: "PROJECT IMAGE";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 11px;
+      letter-spacing: 0.1em;
+      color: #777;
+    }
 
-        footer a {
-            color: #171717;
-        }
+    .project:hover .project-image {
+      opacity: 0.82;
+    }
 
-        @media (max-width: 700px) {
-            nav {
-                align-items: flex-start;
-            }
+    .project-title {
+      font-size: 28px;
+      line-height: 1;
+      letter-spacing: -0.04em;
+      font-weight: 700;
+    }
 
-            nav div:last-child {
-                display: none;
-            }
+    .project-meta {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #555;
+    }
 
-            h1 {
-                letter-spacing: -4px;
-            }
+    .project-role {
+      margin-top: 3px;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
 
-            .work-grid,
-            .services {
-                grid-template-columns: 1fr;
-            }
+    /* ABOUT */
 
-            .hero {
-                min-height: 65vh;
-            }
+    .about {
+      background: #111;
+      color: #f7f6f2;
+    }
 
-            .about {
-                font-size: 21px;
-            }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10vw;
+      align-items: start;
+    }
 
-            footer {
-                flex-direction: column;
-                gap: 15px;
-            }
-        }
-    </style>
+    .about h2 {
+      font-size: clamp(50px, 7vw, 100px);
+      line-height: 0.9;
+      letter-spacing: -0.065em;
+    }
+
+    .about-copy {
+      font-size: 22px;
+      line-height: 1.25;
+      max-width: 600px;
+    }
+
+    .about-copy p + p {
+      margin-top: 25px;
+    }
+
+    /* CREDITS */
+
+    .credits {
+      padding-top: 0;
+    }
+
+    .credit-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 35px;
+      max-width: 1000px;
+    }
+
+    .credit-list span {
+      font-size: 17px;
+    }
+
+    /* SERVICES */
+
+    .services {
+      border-top: 1px solid #d8d6d0;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10vw;
+    }
+
+    .services h2 {
+      font-size: clamp(50px, 7vw, 100px);
+      line-height: 0.9;
+      letter-spacing: -0.065em;
+    }
+
+    .service-list {
+      border-top: 1px solid #111;
+    }
+
+    .service {
+      padding: 22px 0;
+      border-bottom: 1px solid #111;
+      font-size: 20px;
+    }
+
+    .service span {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: 7px;
+      color: #666;
+    }
+
+    /* FOOTER */
+
+    footer {
+      padding: 50px 5vw;
+      border-top: 1px solid #111;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 30px;
+    }
+
+    .footer-name {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: -0.04em;
+    }
+
+    .footer-contact {
+      text-align: right;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .footer-contact a:hover {
+      opacity: 0.5;
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 700px) {
+
+      header {
+        padding: 22px 5vw;
+      }
+
+      .name {
+        font-size: 18px;
+      }
+
+      nav {
+        gap: 15px;
+        font-size: 11px;
+      }
+
+      .hero {
+        min-height: 70vh;
+        padding-top: 25vw;
+      }
+
+      .hero h1 {
+        font-size: clamp(58px, 18vw, 110px);
+      }
+
+      .hero-copy {
+        margin-top: 30px;
+        font-size: 21px;
+      }
+
+      .section {
+        padding: 70px 5vw;
+      }
+
+      .work-grid {
+        grid-template-columns: 1fr;
+        gap: 55px;
+      }
+
+      .project-title {
+        font-size: 25px;
+      }
+
+      .about-grid,
+      .services-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+      }
+
+      .about-copy {
+        font-size: 20px;
+      }
+
+      footer {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-contact {
+        text-align: left;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
+  <header>
+    <a href="#" class="name">Mark Melara</a>
+
     <nav>
-        <div class="logo">Mark Melara</div>
-        <div>
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#contact">Contact</a>
-        </div>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#contact">Contact</a>
     </nav>
+  </header>
 
-    <main>
 
-        <section class="hero">
-            <div class="hero-inner">
-                <div class="eyebrow">WGA Writer / Creative</div>
-                <h1>Writer /<br>Creative</h1>
-                <p class="intro">
-                    I write, create, and produce across film, television, gaming, and branded entertainment.
-                </p>
-            </div>
-        </section>
+  <main>
 
-        <section class="section" id="work">
-            <div class="section-label">Selected Work</div>
+    <!-- HERO -->
 
-            <div class="work-grid">
+    <section class="hero">
+      <h1>WRITER /<br>CREATIVE</h1>
 
-                <a class="work-item" href="#">
-                    <div class="work-type">Television</div>
-                    <div class="work-title">SNAP</div>
-                </a>
+      <p class="hero-copy">
+        Writer and creative producer working across television, gaming, and branded entertainment.
+      </p>
+    </section>
 
-                <a class="work-item" href="#">
-                    <div class="work-type">Television / Gaming IP</div>
-                    <div class="work-title">Sony / PlayStation</div>
-                </a>
 
-                <a class="work-item" href="#">
-                    <div class="work-type">Gaming</div>
-                    <div class="work-title">Wide Right Games</div>
-                </a>
+    <!-- SELECTED WORK -->
 
-                <a class="work-item" href="#">
-                    <div class="work-type">Commercial / Branded</div>
-                    <div class="work-title">Selected Creative Work</div>
-                </a>
+    <section class="section" id="work">
 
-            </div>
-        </section>
+      <div class="section-header">
+        <div class="section-title">Selected Work</div>
+        <div class="section-number">01 — 06</div>
+      </div>
 
-        <section class="section" id="about">
-            <div class="section-label">About</div>
+      <div class="work-grid">
 
-            <p class="about">
-                I'm a WGA writer and creative who came up through television, writing for sitcoms before expanding into scripted series, gaming, commercials, and branded entertainment. I like work with a point of view — stories that can be funny, strange, sharp, and occasionally hit somewhere deeper.
-            </p>
-        </section>
+        <!-- AIRBLADE -->
 
-        <section class="section" id="services">
-            <div class="section-label">Services</div>
+        <a href="#" class="project">
+          <div class="project-image"></div>
 
-            <div class="services">
+          <div class="project-title">AirBlade</div>
 
-                <div class="service">
-                    <h3>Script Workshops</h3>
-                    <p>
-                        Focused feedback and conversation designed to help writers find the story underneath the draft.
-                    </p>
-                </div>
+          <div class="project-meta">
+            Sony TV / PlayStation Productions
+          </div>
 
-                <div class="service">
-                    <h3>Script Editing</h3>
-                    <p>
-                        Story, structure, character, dialogue, pacing, and scene-level notes for feature and television scripts.
-                    </p>
-                </div>
+          <div class="project-role">
+            Creator · Writer · Executive Producer
+          </div>
+        </a>
 
-                <div class="service">
-                    <h3>Proofreading</h3>
-                    <p>
-                        A final pass for grammar, formatting, clarity, continuity, and the small things that distract from the writing.
-                    </p>
-                </div>
 
-                <div class="service">
-                    <h3>Creative Consultation</h3>
-                    <p>
-                        Story and creative problem-solving for writers, filmmakers, brands, and other creative projects.
-                    </p>
-                </div>
+        <!-- SNAP -->
 
-            </div>
-        </section>
+        <a href="#" class="project">
+          <div class="project-image"></div>
 
-    </main>
+          <div class="project-title">SNAP</div>
 
-    <footer id="contact">
-        <div>Mark Melara</div>
-        <div><a href="mailto:YOUR_EMAIL_HERE">Get in touch</a></div>
-    </footer>
+          <div class="project-meta">
+            AMC+
+          </div>
+
+          <div class="project-role">
+            Creator · Showrunner · Executive Producer
+          </div>
+        </a>
+
+
+        <!-- BREAKING THE ARTIST -->
+
+        <a href="#" class="project">
+          <div class="project-image"></div>
+
+          <div class="project-title">Breaking the Artist</div>
+
+          <div class="project-meta">
+            JBR Studios
+          </div>
+
+          <div class="project-role">
+            Writer · Executive Producer
+          </div>
+        </a>
+
+
+        <!-- FREEDOM FINGER -->
+
+        <a href="#" class="project">
+          <div class="project-image"></div>
+
+          <div class="project-title">Freedom Finger</div>
+
+          <div class="project-meta">
+            Wide Right Games
+          </div>
+
+          <div class="project-role">
+            Co-Writer · Narrative
+          </div>
+        </a>
+
+
+        <!-- SUPERIOR DONUTS -->
+
+        <a href="#" class="project">
+          <div class="project-image"></div>
+
+          <div class="project-title">Superior Donuts</div>
+
+          <div class="project-meta">
+            CBS / Warner Bros. Television
+          </div>
+
+          <div class="project-role">
+            Writer · “Wage Against the Machine” / “High Class Problems”
+          </div>
+        </a>
+
+
+        <!-- COMMERCIAL / BRANDED -->
+
+        <a href="#" class="project">
+          <div class="project-image"></div>
+
+          <div class="project-title">Commercial / Branded</div>
+
+          <div class="project-meta">
+            Selected Creative Work
+          </div>
+
+          <div class="project-role">
+            Copywriting · Creative Production
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section about" id="about">
+
+      <div class="about-grid">
+
+        <h2>About<br>Mark</h2>
+
+        <div class="about-copy">
+
+          <p>
+            Mark Melara is a WGA writer and creative producer whose work spans television, gaming, and branded entertainment.
+          </p>
+
+          <p>
+            He broke into television through the sitcom world, with his first produced script directed by legendary television director James Burrows.
+          </p>
+
+          <p>
+            His work tends to live somewhere between the funny and the unsettling — stories with a distinct voice, a sense of humor, and something underneath worth digging into.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CREDITS -->
+
+    <section class="section credits">
+
+      <div class="section-header">
+        <div class="section-title">Selected Credits & Collaborators</div>
+      </div>
+
+      <div class="credit-list">
+        <span>AMC Networks</span>
+        <span>CBS</span>
+        <span>Warner Bros. Television</span>
+        <span>Sony TV</span>
+        <span>PlayStation Productions</span>
+        <span>Scopely</span>
+        <span>Wide Right Games</span>
+        <span>UNDP</span>
+        <span>JBR Studios</span>
+      </div>
+
+    </section>
+
+
+    <!-- SERVICES -->
+
+    <section class="section services" id="services">
+
+      <div class="services-grid">
+
+        <h2>Services</h2>
+
+        <div class="service-list">
+
+          <div class="service">
+            <span>01</span>
+            Script Workshops
+          </div>
+
+          <div class="service">
+            <span>02</span>
+            Script Editing
+          </div>
+
+          <div class="service">
+            <span>03</span>
+            Proofreading
+          </div>
+
+          <div class="service">
+            <span>04</span>
+            Creative Consulting
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+
+  <footer id="contact">
+
+    <div class="footer-name">
+      Mark Melara
+    </div>
+
+    <div class="footer-contact">
+      <a href="mailto:mark@markmelara.com">mark@markmelara.com</a><br>
+      <a href="https://www.linkedin.com/in/markmelara/" target="_blank">LinkedIn</a>
+    </div>
+
+  </footer>
 
 </body>
 </html>
