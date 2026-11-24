@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://markmelara.com/sitemap.xml
